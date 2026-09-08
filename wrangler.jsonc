@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "maheer-store",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-08",
+  "assets": {
+    "directory": "./public/"
+  },
+  "r2_buckets": [
+    {
+      "binding": "MAHEER_IMAGES",
+      "bucket_name": "maheer-store-images"
+    }
+  ]
+}
